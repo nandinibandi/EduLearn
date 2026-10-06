@@ -3,10 +3,11 @@ import { ArrowUpRight, BookOpen, Menu, X } from "lucide-react";
 
 const links = [
   ["Home", "#home"],
-  ["Courses", "#courses"],
-  ["Career paths", "#career-paths"],
-  ["Why us", "#why-us"],
-  ["Placements", "#placements"],
+  ["Career Paths", "#career-paths"],
+  ["Job Roles", "#job-roles"],
+  ["Technologies", "#technologies"],
+  ["Why Us", "#why-us"],
+  ["Career Resources", "#resources"],
   ["Contact", "#contact"],
 ];
 
@@ -46,7 +47,7 @@ function Navbar() {
           href="#contact"
           className="hidden items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-bold text-white transition hover:bg-violet-700 sm:inline-flex"
         >
-          Enroll Now <ArrowUpRight size={15} />
+          Login <ArrowUpRight size={15} />
         </a>
 
         <button
@@ -78,7 +79,7 @@ function Navbar() {
               onClick={closeMenu}
               className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3 text-sm font-bold text-white"
             >
-              Enroll Now <ArrowUpRight size={16} />
+              Login <ArrowUpRight size={16} />
             </a>
           </div>
         </div>

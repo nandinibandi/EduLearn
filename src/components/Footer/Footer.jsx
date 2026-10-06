@@ -1,17 +1,24 @@
-import { ArrowUpRight, BookOpen, Github, Instagram, Linkedin, Youtube } from "lucide-react";
+import { ArrowUpRight, BookOpen, Github, Instagram, Linkedin, MapPin, Phone } from "lucide-react";
 
 const footerLinks = {
   "Quick Links": [
     ["Home", "#home"],
-    ["Why EduLearn", "#why-us"],
-    ["Learning roadmap", "#courses"],
-    ["Placements", "#placements"],
+    ["Career Paths", "#career-paths"],
+    ["Job Roles", "#job-roles"],
+    ["Technologies", "#technologies"],
+    ["Why Us", "#why-us"],
+    ["Career Resources", "#resources"],
+    ["Contact", "#contact"],
   ],
-  Courses: [
-    ["Full Stack Development", "#courses"],
-    ["Frontend Development", "#courses"],
-    ["Backend Development", "#courses"],
-    ["Career paths", "#career-paths"],
+  "Career Domains": [
+    ["Software & IT", "#career-paths"],
+    ["Data & AI", "#career-paths"],
+    ["Electronics & Embedded", "#career-paths"],
+    ["Electrical & Automation", "#career-paths"],
+    ["Mechanical & Robotics", "#career-paths"],
+    ["Civil & Construction", "#career-paths"],
+    ["Aerospace", "#career-paths"],
+    ["Chemical Engineering", "#career-paths"],
   ],
 };
 
@@ -30,14 +37,13 @@ function Footer() {
               </span>
             </a>
             <p className="mt-4 max-w-xs text-sm leading-6 text-slate-400">
-              Learn the skills to build what&apos;s next. Your journey into full stack development starts here.
+              EduLearn helps students and graduates explore engineering careers, technology roles and professional opportunities across multiple industries.
             </p>
             <div className="mt-5 flex gap-2.5">
               {[
                 { label: "LinkedIn", icon: Linkedin },
-                { label: "Instagram", icon: Instagram },
-                { label: "YouTube", icon: Youtube },
                 { label: "GitHub", icon: Github },
+                { label: "Instagram", icon: Instagram },
               ].map(({ label, icon: Icon }) => (
                 <a key={label} href="#contact" aria-label={label} className="grid h-9 w-9 place-items-center rounded-xl border border-white/10 text-slate-300 transition hover:border-violet-400 hover:bg-violet-500 hover:text-white">
                   <Icon size={16} />
@@ -58,19 +64,21 @@ function Footer() {
             </div>
           ))}
           <div>
-            <h3 className="text-sm font-bold text-white">Let&apos;s connect</h3>
-            <p className="mt-4 text-sm leading-6 text-slate-400">Have a question about the course? We&apos;re happy to help.</p>
-            <a href="mailto:hello@edulearn.example" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-white">
-              hello@edulearn.example <ArrowUpRight size={14} />
+            <h3 className="text-sm font-bold text-white">Contact</h3>
+            <a href="mailto:careers@edulearn.com" className="mt-4 inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300">
+              careers@edulearn.com <ArrowUpRight size={14} />
             </a>
-            <a href="#contact" className="mt-5 block text-sm font-bold text-white underline decoration-violet-500 decoration-2 underline-offset-4 hover:text-violet-200">
-              Request a callback
+            <a href="tel:+919000000000" className="mt-3 flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300">
+              <Phone size={14} /> +91 90000 00000
             </a>
+            <p className="mt-3 flex items-center gap-2 text-sm text-slate-400">
+              <MapPin size={14} /> India
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-3 pt-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} EduLearn. All rights reserved.</p>
-          <p>Made for your next big thing.</p>
+          <p>© 2026 EduLearn. All rights reserved.</p>
+          <p>Find a career path that fits.</p>
         </div>
       </div>
     </footer>

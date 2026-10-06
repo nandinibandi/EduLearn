@@ -1,32 +1,32 @@
-import { ArrowUpRight, BriefcaseBusiness, Lightbulb, Rocket, UsersRound } from "lucide-react";
+import { ArrowUpRight, Compass, BriefcaseBusiness, Lightbulb, Rocket } from "lucide-react";
 
 const benefits = [
   {
-    icon: UsersRound,
+    icon: Compass,
     number: "01",
-    title: "Expert Mentors",
-    description: "Get thoughtful guidance from developers who know what it takes to thrive in tech.",
+    title: "Explore Your Options",
+    description: "Compare career paths that match your education, interests, and strengths.",
     color: "bg-violet-100 text-violet-700",
   },
   {
     icon: Lightbulb,
     number: "02",
-    title: "Practical Learning",
-    description: "Make every concept stick through guided practice, not just hours of theory.",
+    title: "Understand Job Roles",
+    description: "Discover day-to-day responsibilities, essential skills, and possible next steps.",
     color: "bg-amber-100 text-amber-700",
   },
   {
     icon: Rocket,
     number: "03",
-    title: "Real-World Projects",
-    description: "Build a portfolio of useful applications that show what you can really do.",
+    title: "Across Many Industries",
+    description: "Explore opportunities in software, data, electronics, engineering, and science.",
     color: "bg-rose-100 text-rose-700",
   },
   {
     icon: BriefcaseBusiness,
     number: "04",
-    title: "Placement Assistance",
-    description: "Get practical support with your resume, interviews, and next career move.",
+    title: "Career Preparation",
+    description: "Get focused guidance for your resume, technical preparation, and interviews.",
     color: "bg-emerald-100 text-emerald-700",
   },
 ];
@@ -36,13 +36,13 @@ function WhyChooseUs() {
     <section id="why-us" className="section-padding bg-white">
       <div className="section-shell">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">The EduLearn difference</span>
+          <span className="eyebrow">Why EduLearn</span>
           <h2 className="heading-font mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-            More than a course.{" "}
-            <span className="text-violet-600">A launchpad.</span>
+            Clarity for your{" "}
+            <span className="text-violet-600">next career move.</span>
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
-            The right people, real practice, and a clear path from your first line of code to your first opportunity.
+            Make informed decisions about your future with practical information for students, freshers, and graduates.
           </p>
         </div>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -60,7 +60,7 @@ function WhyChooseUs() {
               <h3 className="heading-font mt-6 text-lg font-extrabold text-ink">{title}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-500">{description}</p>
               <span className="mt-5 inline-flex items-center gap-1 text-xs font-bold text-violet-600 opacity-0 transition group-hover:opacity-100">
-                Explore <ArrowUpRight size={14} />
+                Find your path <ArrowUpRight size={14} />
               </span>
             </article>
           ))}
